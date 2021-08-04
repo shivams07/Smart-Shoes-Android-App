@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:id="@+id/home" android:title="Home" />
+    <item android:id="@+id/connect" android:title="Connect to your Shoes"></item>
+    <item android:id="@+id/charge" android:title="Charge your device" />
+    <item android:id="@+id/Goalinfo" android:title="Goal info" />
+    <item android:id="@+id/summary" android:title="Monthly Summary"/>
+    <item android:id="@+id/Trusted" android:title="Trusted Contacts"/>
+    <item android:id="@+id/signout" android:title="Sign Out" />
+</menu>

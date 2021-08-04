@@ -1,0 +1,22 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/lpurple</item>
+    </style>
+    <style name="Nav">
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <!--<style name="BluScreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/myactionbar</item>
+    </style>
+    <style name="myactionbar">
+        <item name="android:background">@color/lpurple</item>
+    </style>
+-->
+</resources>

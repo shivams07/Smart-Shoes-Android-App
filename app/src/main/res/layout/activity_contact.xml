@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact"
+    android:background="@color/white"
+    android:id="@+id/drawer">
+    <include layout="@layout/nav_action" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="44dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="Send Your Location to your Trusted Contacts"
+            android:textColor="@color/lpurple"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/trustedcontactslist"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="37dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/custom_button"
+            android:onClick="sendSms"
+            android:text="Send Location"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintStart_toEndOf="@+id/button3" />
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/listview_custom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trustedcontactslist" />
+
+        <TextView
+            android:id="@+id/trustedcontactslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Trusted Contacts"
+            android:textColor="@color/lpurple"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/list1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:background="@drawable/custom_button"
+            android:onClick="addContact"
+            android:text="Add Trusted Contact"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_width="325dp"
+        android:layout_height="812dp"
+        android:fontFamily="sans-serif-thin"
+        android:theme="@style/Nav"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start"
+        android:id="@+id/nv"
+        android:background="@drawable/button"
+        app:itemTextColor="@color/white"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

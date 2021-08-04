@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/header_style"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/acc_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/gname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:layout_marginTop="-50dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="130dp"
+        android:fontFamily="@font/bold"
+        android:textAppearance="@color/purple"
+        />
+
+    <TextView
+        android:id="@+id/gemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:textAppearance="@color/purple"/>
+
+</LinearLayout>

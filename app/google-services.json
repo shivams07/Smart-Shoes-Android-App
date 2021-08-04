@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "553531045631",
+    "firebase_url": "https://adobepractice-ec324.firebaseio.com",
+    "project_id": "adobepractice-ec324",
+    "storage_bucket": "adobepractice-ec324.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:553531045631:android:69b0e08ecb8850877b3eca",
+        "android_client_info": {
+          "package_name": "com.example.adobepractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "553531045631-967k0t1ckfqbmaj9vak0ani5jrl8m32q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adobepractice",
+            "certificate_hash": "a9c40d91b7a4b5b2da590b13cc95444707762149"
+          }
+        },
+        {
+          "client_id": "553531045631-e09rb1gpnkm950lj735hkd76gornkiav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfaQypg9fN0rAkUUuBzbT2tJJZAjP1G4Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "553531045631-e09rb1gpnkm950lj735hkd76gornkiav.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Charge"
+    android:id="@+id/drawer">
+    <include layout="@layout/nav_action" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chargeback">
+
+        <com.ramijemli.percentagechartview.PercentageChartView
+            android:id="@+id/view_id"
+            android:layout_width="231dp"
+            android:layout_height="197dp"
+            android:layout_marginBottom="448dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:pcv_animDuration="800"
+            app:pcv_animInterpolator="anticipate_overshoot"
+            app:pcv_backgroundBarColor="@color/lpurple"
+            app:pcv_mode="ring"
+            app:pcv_orientation="counter_clockwise"
+            app:pcv_progress="10"
+            app:pcv_startAngle="90"
+            app:pcv_textSize="20dp"
+            app:pcv_textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="632dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/dpurple"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="362dp"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="Charge your Device"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/webView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="149dp"
+            android:layout_height="151dp"
+            android:layout_marginBottom="56dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.778" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_width="325dp"
+        android:layout_height="812dp"
+        android:fontFamily="sans-serif-thin"
+        android:theme="@style/Nav"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start"
+        android:id="@+id/nv"
+        android:background="@drawable/button"
+        app:itemTextColor="@color/white"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>
