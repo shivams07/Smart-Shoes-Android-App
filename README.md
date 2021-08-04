@@ -8,4 +8,4 @@ The Added Project is a Android App that can help sync data via Arduino.
 
 Watch the Complete Demonstration of the Project on YouTube.
 
-Smart Shoes YouTube Tutorial
+https://youtu.be/388OPdx5GNs
